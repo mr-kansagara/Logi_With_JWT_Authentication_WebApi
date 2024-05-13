@@ -14,7 +14,7 @@ namespace Login_With_JWT_Authentication.Model.LoginAndRegistration
         public string Email { get; set; } = string.Empty;
 
         [Required(ErrorMessage ="Please Provide a Data Of Birth of the User")]
-        public DateOnly DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         [MaxLength(8)]
         [MinLength(8)]

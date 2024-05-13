@@ -18,7 +18,7 @@ namespace Login_With_JWT_Authentication.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DateOfBirth = table.Column<DateOnly>(type: "date", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "date", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
                     ConfirmPassword = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false)
                 },
