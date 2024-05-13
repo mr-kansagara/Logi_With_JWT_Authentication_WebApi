@@ -1,0 +1,6 @@
+@Login_With_JWT_Authentication_HostAddress = http://localhost:5135
+
+GET {{Login_With_JWT_Authentication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
