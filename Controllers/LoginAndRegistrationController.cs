@@ -1,5 +1,6 @@
 ﻿using Login_With_JWT_Authentication.Database;
 using Login_With_JWT_Authentication.Model.LoginAndRegistration;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -23,6 +24,7 @@ namespace Login_With_JWT_Authentication.Controllers
         }
         [Route("login")]
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult Login([FromBody] Login login)
         {
             IActionResult response = Unauthorized();
