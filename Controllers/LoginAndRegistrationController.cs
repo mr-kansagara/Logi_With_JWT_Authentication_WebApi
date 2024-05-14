@@ -59,6 +59,7 @@ namespace Login_With_JWT_Authentication.Controllers
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        [AllowAnonymous]
         [Route("Registration")]
         [HttpPost]
         public async Task<IActionResult> Registration([FromBody] Registration registration)
