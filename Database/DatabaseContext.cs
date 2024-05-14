@@ -1,4 +1,5 @@
-﻿using Login_With_JWT_Authentication.Model.LoginAndRegistration;
+﻿using Login_With_JWT_Authentication.Model.Departments;
+using Login_With_JWT_Authentication.Model.LoginAndRegistration;
 using Microsoft.EntityFrameworkCore;
 
 namespace Login_With_JWT_Authentication.Database
@@ -9,6 +10,7 @@ namespace Login_With_JWT_Authentication.Database
         {
         }
 
-        public DbSet<Registration> Registrations { get; set; }
+        public DbSet<Registration> Registrations { get; set; } 
+        public DbSet<DepartmentModel> Departments { get; set; }
     }
 }
